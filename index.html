@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de CSS</title>
+    <!--CSS.-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--JavaScript.-->
+    <script src="script.js"></script>
+</head>
+<body>
+    <!--Tela inicial da página web.-->
+    <section id="inicio">
+        <h1>Avaliação de CSS</h1>
+        <p>
+            A avaliação a seguir é composta de 6 questões de múltipla escolha com 4 alternativas cada uma. 
+            Responda-a com a devida atenção, pois você terá só uma chance para escolher uma das alternativas.
+            Você deverá acertar 3 questões no minímo para ser aprovado(a). Seu tempo será de 4 minutos.
+        </p>
+        <button type="button" class="botao-01" onclick="iniciar()">INICIAR</button>
+    </section>
+    <!--Segunda tela da página.-->
+    <section id="secoes">
+        <!--Cronômetro.-->
+        <section class="tempo">
+            <span id="minuto"></span><span>:</span><span id="segundo"></span>
+        </section>
+        <!--Questões de múltipla escolha.-->        
+        <form action="url" method="post">
+            <section id="secao-01">
+                <div>1 - A uma página HTML5 deseja-se vincular um arquivo chamado arq1.css. Para isso devem-se utilizar as instruções:</div>
+                <div><input type="checkbox" name="resp-01" value="10" onchange="respEum()">rel="stylesheet" type="file/css" src="arq1.css" dentro do elemento link, no corpo da página.</div>
+                <div><input type="checkbox" name="resp-01" value="11" onchange="respCum()">rel="stylesheet" type="text/css" href="arq1.css" dentro do elemento link, no cabeçalho da página.</div>
+                <div><input type="checkbox" name="resp-01" value="12" onchange="respEum()">type="text/css" href="arq1.css" dentro do elemento import, no cabeçalho da página.</div>
+                <div><input type="checkbox" name="resp-01" value="13" onchange="respEum()">type="css" style="external" href="arq1.css" dentro do elemento import, no cabeçalho da página.</div>
+            </section>
+            <section id="secao-02">
+                <div>2 - CSS é uma linguagem de folha de estilo criada para:</div>
+                <div><input type="checkbox" name="resp-02" value="20" onchange="respEdois()">separar forma e conteúdo em arquivos distintos.</div>
+                <div><input type="checkbox" name="resp-02" value="21" onchange="respEdois()">permitir a criação de funções matemáticas repetitivas que podem ser chamadas a partir do código HTML.</div>
+                <div><input type="checkbox" name="resp-02" value="22" onchange="respEdois()">simplificar a seleção de fontes e aplicação de cores em páginas HTML.</div>
+                <div><input type="checkbox" name="resp-02" value="23" onchange="respCdois()">descrever a apresentação de um documento HTML através da definição de como os elementos devem ser exibidos em tela.</div>
+            </section>
+            <section id="secao-03">
+                <div>3 - Na presença da seguinte declaração CSS: .center { text-align: center; color: red; }, serão centralizados e coloridos de vermelho os textos incluídos:</div>
+                <div><input type="checkbox" name="resp-03" value="30" onchange="respCtres()">nos elementos que possuem atributo class="center".</div>
+                <div><input type="checkbox" name="resp-03" value="31" onchange="respEtres()">nos elementos que possuem atributo id="center".</div>
+                <div><input type="checkbox" name="resp-03" value="32" onchange="respEtres()">nos elementos que possuem atributo name="center".</div>
+                <div><input type="checkbox" name="resp-03" value="33" onchange="respEtres()">na seção elemento center do documento.</div>
+            </section>
+            <section id="secao-04">
+                <div>4 - A propriedade overflow em CSS3 admite alguns valores, EXCETO:</div>
+                <div><input type="checkbox" name="resp-04" value="40" onchange="respEquatro()">overflow: scroll.</div>
+                <div><input type="checkbox" name="resp-04" value="41" onchange="respEquatro()">overflow: visible.</div>
+                <div><input type="checkbox" name="resp-04" value="42" onchange="respCquatro()">overflow: clipped.</div>
+                <div><input type="checkbox" name="resp-04" value="43" onchange="respEquatro()">overflow: auto.</div>
+            </section>
+            <section id="secao-05">
+                <div>5 - Através do CSS3, assinale a alternativa que transforma em itálico o texto de hyperlinks quando se passa o cursor sobre eles:</div>
+                <div><input type="checkbox" name="resp-05" value="50" onchange="respEcinco()">a:hover { font-decoration: italic; }</div>
+                <div><input type="checkbox" name="resp-05" value="51" onchange="respCcinco()">a:hover { font-style: italic; }</div>
+                <div><input type="checkbox" name="resp-05" value="52" onchange="respEcinco()">a:hover { text-decoration: italic; }</div>
+                <div><input type="checkbox" name="resp-05" value="53" onchange="respEcinco()">a:hover { text-style: italic; }</div>
+            </section>
+            <section id="secao-06">
+                <div>6 - A propriedade position da CSS3 especifica o tipo do método de posicionamento usado para um determinado elemento HTML. Esta propriedade permite os valores:</div>
+                <div><input type="checkbox" name="resp-06" value="60" onchange="respEseis()">top, bottom, left, right ou center.</div>
+                <div><input type="checkbox" name="resp-06" value="61" onchange="respEseis()">public, private, default ou static.</div>
+                <div><input type="checkbox" name="resp-06" value="62" onchange="respEseis()">bottom, left, right, wrap ou center.</div>
+                <div><input type="checkbox" name="resp-06" value="63" onchange="respCseis()">static, relative, absolute ou fixed.</div>
+            </section>
+            <section class="final">
+                <button type="button" class="botao-02" onclick="finalizar()">FINALIZAR</button>
+            </section>
+        </form>
+        <footer>Desenvolvido por Maycon França</footer>
+    </section>
+    <!--Tela final da página.-->
+    <section id="resultado"></section>
+</body>
+</html>

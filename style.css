@@ -1,0 +1,92 @@
+/*Formatação CSS.*/
+
+body {
+    margin: 0;
+}
+
+/*Tela inicial da página web.*/
+#inicio {
+    width: 50%;
+    margin: 25px auto 0 auto;
+    border: solid 1px orange;
+    box-shadow: 5px 5px 4px 4px orange;
+    text-align: center;
+    font-size: 21px;
+    display: block;
+}
+
+h1 {
+    color: orange;
+}
+
+p {
+    padding: 10px;
+    text-align: justify;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.botao-01 {
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: orange;
+}
+
+/*Segunda tela da página.*/
+#secoes {
+    width: 57%;
+    margin: 0 auto;
+    display: none;
+}
+
+.tempo {
+    border: solid 1px orange;
+    width: 50px;
+    box-shadow: 2px 2px 2px 2px orange;
+    margin: 25px auto 25px auto;
+    text-align: center;
+    font-size: 18px;
+    color: orange;
+}
+
+#secao-01, #secao-02, #secao-03, #secao-04, #secao-05, #secao-06 {
+    border: solid 1px black;
+    box-shadow: 5px 5px 4px 4px darkgray;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+div {
+    padding: 10px;
+    font-size: 17px;
+}
+
+input {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.final {
+    text-align: center;
+}
+
+.botao-02 {
+    font-size: 18px;
+    color: orange;
+    margin-bottom: 25px;
+}
+
+footer {
+    text-align: center;
+    font-size: 18px;
+    color: orange;
+    font-weight: bold;
+}
+
+/*Tela final da página.*/
+#resultado {
+    width: 30%;
+    margin: 25px auto 0 auto;
+    text-align: center;
+    font-size: 35px;
+    display: none;
+}
